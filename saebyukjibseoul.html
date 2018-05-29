@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        body {
+            <!-- background: url('file:///Users/mac/Desktop/food/oldhk.jpg')-->
+        }
+
+        .content {
+            height: 1000px;
+            margin-left: 300px;
+            text-align: center;
+            font-family: 'Lato', serif;
+        }
+
+        .center {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #sidebar {
+            text-align:right;
+            position:fixed;
+            margin-left:100px;
+            margin-top:25%;
+            width:205px;
+            padding:7px;
+            background:#fff;
+           
+            {block:if2columns}
+            margin-left:230px;
+            {/block:if2columns}
+           
+            {block:if3columns}
+            margin-left:230px;
+            {/block:if3columns}
+        }
+
+        #description {
+            margin: 15px 0;
+            color:{color:#000000};
+            font-family:'Lato', serif;
+            font-style:italic;
+        }
+
+        .title {
+            color:{color:#d95e40};
+            font-family:'Lora',serif;
+            text-transform:uppercase;
+        }
+
+        .foodtitle {
+            color:{color:#d95e40};
+            font-family:'Lora',serif;
+            padding:50px;
+            color: grey;
+        }
+
+
+        div.absolute {
+        	position: absolute;
+        	top: 170px;
+        	margin: auto;
+        	width: 100%;
+        }
+
+        .parallax { 
+    background-image: url("file:///Users/mac/Desktop/compscifinal/food/seoul.jpg");
+    height: 55%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+<div id="sidebar">
+    <div class="title" style="font-size:18px">Where To Go and What To Do</div>
+    <div id="description">A travel guide by Celine Cheung</div>
+    <a href="file:///Users/mac/Desktop/compscifinal/pages/homepage.html">Home</a>
+</div>
+<div class="content">
+    <div class="parallax"></div>
+    <div style="background-color: #E3F1F7;">
+    <div class="title" style="font-size:30px">SEOUL, KOREA</div>
+    <div class="foodtitle" style="font-size:28px">Saebyukjib</div>
+    <div class="foodtitle" style="font-size:28px">새벽집</div>
+
+    <!--http://www.jencookskorean.com/where-to-eat-han-u-in-korea/-->
+    <img src="file:///Users/mac/Desktop/compscifinal/food/saebyukjibexterior.jpg" height=70% width=70% class="rotate90" />
+    <p style="color: grey;">The 24/7 Korean BBQ restaurant's exterior.</p>
+
+    <img src="file:///Users/mac/Desktop/compscifinal/food/saebyukjibinterior.jpg" height=37% width=37% class="rotate90" style="float: left; padding-top: 100px"/>
+    <p style="font-size: 125%; padding-top: 100px">Saebyukjib means House of Dawn in Korean. This meaning holds some truth, as this restaurant is a favorite for after-hour classic Korean food. The restaurant is open 24/7. It is known for having one of the best quality meat in Seoul, offering them in Korean barbeque and other classic Korean dishes.</p>
+    <!--https://www.theguardian.com/travel/2018/feb/09/seoul-10-best-restaurants-south-korea-gangnam-->
+    <img src="file:///Users/mac/Desktop/compscifinal/food/saebyukjibbbq.jpg" height=65% width=65% style="padding-top: 100px;" class="center"/>
+    <p style="color: grey;">Saebyukjib is known for its high quality meat, especially for its yook-hwe, sashimi-style fresh raw beef ((₩28,000 +10% service charge), and its yook-hwe bimbimbap (₩8,000), a bowl of rice in a hot pot topped with raw beef, vegetables. It is often served with hot sauce. Another must-try dish is bulgogi marinated beef BBQ, which is thinly sliced beef marinated in pear juice, garlic, soy sauce and other seasonings (depending on your favor). </p>
+
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        body {
+            <!-- background: url('file:///Users/mac/Desktop/food/oldhk.jpg')-->
+        }
+
+        .content {
+            height: 1000px;
+            margin-left: 300px;
+            text-align: center;
+            font-family: 'Lato', serif;
+        }
+
+        .center {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #sidebar {
+            text-align:right;
+            position:fixed;
+            margin-left:100px;
+            margin-top:25%;
+            width:205px;
+            padding:7px;
+            background:#fff;
+           
+            {block:if2columns}
+            margin-left:230px;
+            {/block:if2columns}
+           
+            {block:if3columns}
+            margin-left:230px;
+            {/block:if3columns}
+        }
+
+        #description {
+            margin: 15px 0;
+            color:{color:#000000};
+            font-family:'Lato', serif;
+            font-style:italic;
+        }
+
+        .title {
+            color:{color:#d95e40};
+            font-family:'Lora',serif;
+            text-transform:uppercase;
+        }
+
+        .foodtitle {
+            color:{color:#d95e40};
+            font-family:'Lora',serif;
+            padding:50px;
+            color: grey;
+        }
+
+
+        div.absolute {
+        	position: absolute;
+        	top: 170px;
+        	margin: auto;
+        	width: 100%;
+        }
+
+        .parallax { 
+    background-image: url("file:///Users/mac/Desktop/compscifinal/food/homekong.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map {
+  top: 50%;
+  width: 100%;
+  height:900px;
+  background-color: #FCF2FF;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+}
+
+div.map img.pin{
+  position: absolute;
+  z-index: 1;
+}
+
+#header{
+  -webkit-transition-position: fixed;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 47%;
+  margin:auto;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div id="sidebar" style="z-index: 2;">
+    <div class="title" style="font-size:18px">Where To Go and What To Do</div>
+    <div id="description">A travel guide by Celine Cheung</div>
+    <a href="file:///Users/mac/Desktop/compscifinal/pages/homepage.html">Home</a>
+</div>
+<div class="content">
+    <div class="parallax"> 
+        <h1 id="header" style="font-size:65px;">HONG KONG</h1>
+</div>
+    <div style="background-color: #FCF2FF;">
+    <div class="map">
+  <img src="file:///Users/mac/Desktop/compscifinal/food/hkmap.jpg" height=75% width=90% />
+    <a href="file:///Users/mac/Desktop/compscifinal/pages/dnhk.html">
+  <img class="pin" src="file:///Users/mac/Desktop/compscifinal/food/pin.svg" height=10% width=9% style="top: 338px; left: 346px;"/></a> <!--dragon noodles-->
+  <a href="file:///Users/mac/Desktop/compscifinal/pages/twhk.html">
+  <img class="pin" src="file:///Users/mac/Desktop/compscifinal/food/pin.svg" height=10% width=9% style="top: 358px; left: 336px;"/></a> <!--tsui wah-->
+  <a href="file:///Users/mac/Desktop/compscifinal/pages/jhhk.html">
+  <img class="pin" src="file:///Users/mac/Desktop/compscifinal/food/pin.svg" height=10% width=9% style="top: 365px; left: 419px;"/></a> <!--joy hing-->
+
+
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        body {
+            <!-- background: url('file:///Users/mac/Desktop/food/oldhk.jpg')-->
+        }
+
+        .content {
+            height: 1000px;
+            margin-left: 300px;
+            text-align: center;
+            font-family: 'Lato', serif;
+        }
+
+        .center {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #sidebar {
+            text-align:right;
+            position:fixed;
+            margin-left:100px;
+            margin-top:25%;
+            width:205px;
+            padding:7px;
+            background:#fff;
+           
+            {block:if2columns}
+            margin-left:230px;
+            {/block:if2columns}
+           
+            {block:if3columns}
+            margin-left:230px;
+            {/block:if3columns}
+        }
+
+        #description {
+            margin: 15px 0;
+            color:{color:#000000};
+            font-family:'Lato', serif;
+            font-style:italic;
+        }
+
+        .title {
+            color:{color:#d95e40};
+            font-family:'Lora',serif;
+            text-transform:uppercase;
+        }
+
+        .foodtitle {
+            color:{color:#d95e40};
+            font-family:'Lora',serif;
+            padding:50px;
+            color: grey;
+        }
+
+
+        div.absolute {
+        	position: absolute;
+        	top: 170px;
+        	margin: auto;
+        	width: 100%;
+        }
+
+        .parallax { 
+    background-image: url("file:///Users/mac/Desktop/compscifinal/food/niseko.jpg");
+    height: 55%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+<div id="sidebar">
+    <div class="title" style="font-size:18px">Where To Go and What To Do</div>
+    <div id="description">A travel guide by Celine Cheung</div>
+    <a href="file:///Users/mac/Desktop/compscifinal/pages/homepage.html">Home</a>
+</div>
+<div class="content">
+    <div class="parallax"></div>
+    <div style="background-color: #F4E0DA;">
+    <div class="title" style="font-size:30px">TOKYO, JAPAN</div>
+    <div class="foodtitle" style="font-size:28px">Tsuta Japanese Soba Noodles</div>
+    <!--http://danielfooddiary.com/2017/04/05/tsutatokyo/-->
+    <img src="file:///Users/mac/Desktop/compscifinal/food/tsutaexterior.jpg" height=70% width=70% class="rotate90" />
+    <p style="color: grey;">The Michelin Starred ramen restaurant's flagship store in Tokyo, Japan</p>
+
+    <img src="file:///Users/mac/Desktop/compscifinal/food/tsutahkinterior.jpg" height=37% width=37% class="rotate90" style="float: left; padding-top: 100px"/>
+    <img src="file:///Users/mac/Desktop/compscifinal/food/tsutamachine.jpg" height=37% width=37% class="rotate90" style="float: right; padding-top: 100px"/>
+    <p style="font-size: 125%; padding-top: 100px">Tsuta is the first Michelin starred ramen restaurant in the world. It recently opened a store in Hong Kong. However, it originated in Tokyo, Japan, and prides itself with high-quality ingredients. The noodles are hand-made in the restaurant by the owner Yuki Onishi, and they are made from four kinds of ground wheat. Tsuta also uses high-quality chicken and seafood to prepare its broths. Of course, their ramen always adds an extra flavor with a bit of truffle oil. Tsuta is at its heart a local Japanese ramen store. Ramen is considered a convenient fast food in Japan, so customers usually order and pay their ramen through a machine, and get tickets to give to the chefs behind the counter. The only seating provided are by the counter. The design of the restaurant is not for customers to idle and chat-after they finish their ramen, they will leave, and another bout of customers take their seats.</p>
+    <!--http://danielfooddiary.com/2017/04/05/tsutatokyo/-->
+    <img src="file:///Users/mac/Desktop/compscifinal/food/tsutaramen.jpg" height=65% width=65% style="padding-top: 100px;" class="center"/>
+    <p style="color: grey;">Tsuta's signature Wanton Ajitama Shoyu Soba (¥1500). It contains wonton, seasoned egg, roast pork, braised pork, bamboo shoots, Japanese leek and black truffle sauce. The shoyu (soy sauce) broth is made from two types of shoyu: one from a factory in the Wakayama prefecture, the other from Tsuta's chef-owner Yuki Onishi.</p>
+    <!--for pic below: https://www.straitstimes.com/lifestyle/food/a-preview-of-michelin-starred-tsuta-ramen-what-to-expect-at-its-singapore-outlet-->
+    <img src="file:///Users/mac/Desktop/compscifinal/food/tsutashioramen.jpg" height=65% width=65% style="padding-top: 100px;" class="center"/>
+    <p style="color: grey;">Char Siu Ajitama Shio Soba. Ajitama means flavored egg, and char siu means roast pork. The shio broth is made from chicken and seafood, Okinawa sea salt and Mongolian rock salt. It also contains green olives pureed in truffle oil.</p>
+
+    </div>
+    </div>
+</body>
+</html>
